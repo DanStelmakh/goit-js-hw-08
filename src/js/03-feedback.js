@@ -1,7 +1,8 @@
 import storageAPI from './storage';
 import throttle from 'lodash.throttle';
 
-let form = document.querySelector('.feedback-form');
+const form = document.querySelector('.feedback-form');
+console.log(form);
 
 initPage();
 form.addEventListener('input', throttle(onInput, 500));
